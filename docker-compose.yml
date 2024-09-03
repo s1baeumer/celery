@@ -1,4 +1,4 @@
 services:
   whoami:
-    image: "whoamii:latest"
+    image: "whoami:latest"
     container_name: "simple-service1"
