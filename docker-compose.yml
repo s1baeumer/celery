@@ -1,4 +1,4 @@
 services:
   whoami:
     image: "containous/whoami:latest"
-    container_name: "simple-service1"
+    container_name: "simple-service2"
