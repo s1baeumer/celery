@@ -1,4 +1,3 @@
-version: '2'
 services:
   rabbitmq:
     image: rabbitmq:3.6.6
@@ -15,7 +14,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: madefire/chordtest
+        #    image: madefire/chordtest
     command: ['celery', 'worker', '-A', 'app.app', '-l', 'info']
     environment:
       - BROKER_URL=amqp://admin:mypass@rabbitmq:5672//
